@@ -27,6 +27,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
    `<Barrage v-bind:datalist="datalist"></Barrage>`
 
 ## data-form to datalist
+
+
 ```{"barrageId":26,
 	"barrageSenderId":1,
 	"content":"etetwerwerwr",
@@ -35,7 +37,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	"color":"green",
 	"textSize":20,
 	"road":0,
-	}```
+	}
+```
 
 ### You need to install JQuery
 
