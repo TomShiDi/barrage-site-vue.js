@@ -29,7 +29,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## data-form to datalist
 
 
-```{"barrageId":26,
+```
+{"barrageId":26,
 	"barrageSenderId":1,
 	"content":"etetwerwerwr",
 	"starNum":24,
