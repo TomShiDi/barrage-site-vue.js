@@ -3,10 +3,10 @@
     <div class="barrage-content" ref="barrage-content">
       <div class="barrage-road">
         <!--<span class="barrage" v-bind:class="{barrage_active:isActive}" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft">Hello World</span>-->
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad0" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter" >
+          <span class="barrage" v-for="barrage in barrageRoad0" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -17,10 +17,10 @@
 
       </div>
       <div class="barrage-road">
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad1" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter">
+          <span class="barrage" v-for="barrage in barrageRoad1" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -30,10 +30,10 @@
         </transition-group>
       </div>
       <div class="barrage-road">
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad2" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter">
+          <span class="barrage" v-for="barrage in barrageRoad2" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -43,10 +43,10 @@
         </transition-group>
       </div>
       <div class="barrage-road">
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad3" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter">
+          <span class="barrage" v-for="barrage in barrageRoad3" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -56,10 +56,10 @@
         </transition-group>
       </div>
       <div class="barrage-road">
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad4" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter">
+          <span class="barrage" v-for="barrage in barrageRoad4" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -69,10 +69,10 @@
         </transition-group>
       </div>
       <div class="barrage-road">
-        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter">
-          <span class="barrage" v-for="barrage in barrageRoad5" v-bind:key="barrage.barrageId">
+        <transition-group name="barrage" v-bind:css="false" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:after-enter="afterEnter">
+          <span class="barrage" v-for="barrage in barrageRoad5" v-bind:key="barrage.barrageId" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeft" v-on:click="mouseClicked($event)">
             {{barrage.content}}
-            <img src="../assets/star-active.png" class="star-img" alt="">
+            <img src="/static/icon/star.png" class="star-img" alt="">
             <span class="star-num-text">{{barrage.starNum}}</span>
             <span style="display: none">{{barrage.barrageId}}</span>
             <span style="display: none">{{barrage.speed}}</span>
@@ -137,7 +137,7 @@
 
   export default {
     name: "Practice",
-    props: ['datalist', 'bind_data'],
+    props: ['datalist','actionUrl'],
     data() {
       return {
         inputValue: '',
@@ -164,23 +164,26 @@
         deviceType: "",
 
         I: 0,//右键弹幕的id
-        barrageData_2: [
-          {
-            "barrageId": 1,
-            "content": "第二条弹幕.............",
-            "color": "red",
-            "speed": 16,
-            "textSize": 20,
-            "road": 0,
-            "starNum": 0
-          }
-        ],
+        // barrageData_2: [
+        //   {
+        //     "barrageId": 1,
+        //     "content": "第二条弹幕.............",
+        //     "color": "red",
+        //     "speed": 16,
+        //     "textSize": 20,
+        //     "road": 0,
+        //     "starNum": 0
+        //   }
+        // ],
+        barrageData_2: [],
         barrageRoad0: [],
         barrageRoad1: [],
         barrageRoad2: [],
         barrageRoad3: [],
         barrageRoad4: [],
-        barrageRoad5: []
+        barrageRoad5: [],
+        _actionUrl: ""
+
       };
     },
     methods: {
@@ -189,28 +192,43 @@
        * @param event
        */
       mouseClicked: function (event) {
-        let barrage = event.valueOf();
+        let barrage = event.target;
+        console.log("mouseClicked", barrage.childNodes);
+
         barrage.classList.add("barrage-clicked");
-        barrage.childNodes[1].setAttribute("src", "/pic/star-active.png");
+        barrage.childNodes[1].setAttribute("src", "/static/icon/star-active.png");
         barrage.childNodes[3].innerHTML = parseInt(barrage.childNodes[3].innerHTML) + 1;
-        // for (var i =0;i<barrage.childNodes.length;i++){
-        //     console.log(i, barrage.childNodes[i]);
-        // }
-        this.star(barrage);
+
+        // this.star(barrage);//用户自定义
       },
 
-
+      /**
+       * 鼠标进入单条弹幕区域事件函数
+       */
       mouseEnter: function (event) {
-        console.log("mouseEnter", event);
-        let barrage = event.currentTarget;
+        // console.log("mouseEnter", event);
+        let barrage = event.target;
         let computeStyle = window.getComputedStyle(barrage), left = computeStyle.getPropertyValue("left");
 
         barrage.style.left = left;
-        this.isActive = false;
+        Velocity(barrage, "stop");
       },
+      /**
+       * 鼠标离开单条弹幕区域事件函数
+       */
+      mouseLeft: function (event,done) {
+        let barrage = event.target;
+        // console.log("mouseLeft", barrage.childNodes);
 
-      mouseLeft: function (event) {
-        this.isActive = true;
+        Velocity(barrage,{
+            left: "-60%"
+        },
+          {
+            duration: parseInt(barrage.childNodes[7].innerHTML) * 1000,
+            complete:function () {
+              // done();
+            }
+          })
       },
 
       sendBarrage: function (barrageId, content, colorSelected, speedNum, rangeValue, roadNum) {
@@ -229,6 +247,7 @@
        */
       addBarrageData: function () {
         let item = {
+          "barrageId":0,
           "content": "",
           "color": "red",
           "speed": 16,
@@ -246,7 +265,7 @@
         // content_1 = content_1.replace(/<script/g, '[非法字段]');
         content_1 = this.contentFilter();
         item["content"] = content_1;
-        console.log("content: ", content_1);
+        // console.log("content: ", content_1);
 
         for (let i = 0; i < this.color.length; i++) {
           if (this.color[i].checked) {
@@ -256,7 +275,7 @@
         }
         console.log("添加事件触发");
         this.barrageData_2.push(item);
-        console.log("barrageData :", this.barrageData_2.length);
+        // console.log("barrageData :", this.barrageData_2.length);
         // content.value = "";
         this.saveBarrage();
       },
@@ -282,7 +301,7 @@
         $.ajax({
           url: "http://localhost:8080/barrage/save",
           type: "post",
-          dataType: "json",
+          dataType: "text",
           data: {
             "barrageSenderId": 1,
             "content": that.contentFilter(),
@@ -300,8 +319,8 @@
           complete: function (ev) {
             // console.log(ev);
             that.content.value = "";
-            if (ev.status === 200) {
-              console.log(ev.responseText);
+            if (ev.status == 200) {
+              // console.log(ev.responseText);
             } else {
               console.log("error", ev.responseText);
             }
@@ -309,49 +328,26 @@
         });
       },
 
-      /**
-       * 后台弹幕数据拉取函数
-       */
-      regularGetBarrage: function () {
-        let that = this;
-        $.ajax({
-          url: "http://localhost:8080/barrage/getData?index=" + that.index,
-          type: "get",
-          dataType: "json",
-          complete: function (ev) {
-            if (ev.status == 200) {
-              // console.log("regular", ev.responseText);
-              let data = JSON.parse(ev.responseText);
-              that.barrageData_2 = that.barrageData_2.concat(data["resultData"]["barrageInfoPage"]["content"]);
-              console.log("regular", that.barrageData_2);
-              that.index++;
-              // console.log(data["resultData"]["barrageInfoPage"]["content"]);
-            } else {
-              console.log("error", ev.responseText);
-            }
-          }
-        });
-      },
+
 
       /**
        * 弹幕点赞处理函数
        * @param option
        */
       star: function (option) {
-        let barrageId = option.childNodes[4].value;
+        console.log("star", option.childNodes);
+        let barrageId = option.childNodes[5].innerHTML;
         // console.log("star", option.childNodes);
         $.ajax({
           type: "get",
           dataType: "json",
-          url: "/barrage/star?barrageId=" + barrageId,
+          url: "http://localhost:8080/barrage/star?barrageId=" + barrageId,
           complete: function (ev) {
             if (ev.status == 200) {
-              $.messager.show({
-                title: "系统提示",
-                msg: "点赞成功",
-                timeout: 3000
-              });
-              console.log(ev.responseText);
+
+              // console.log(ev.responseText);
+            }else {
+              console.log("star failed", ev.responseText);
             }
           }
         });
@@ -362,9 +358,9 @@
        * @returns {*}
        */
       whichTransitionEvent() {
-        var t;
-        var el = document.createElement('fakeelement');
-        var transitions = {
+        let t;
+        let el = document.createElement('fakeelement');
+        let transitions = {
           'transition': 'transitionend',
           'OTransition': 'oTransitionEnd',
           'MozTransition': 'transitionend',
@@ -406,42 +402,46 @@
       },
 
       beforeEnter:function (el) {
-        console.log(el.childNodes);
+        // console.log(el.childNodes);
         el.style.left = "100%";
         el.style.color = el.childNodes[9].innerHTML;
         el.style.fontSize = el.childNodes[11].innerHTML + "px";
       },
       enter: function (el,done) {
-        console.log("childNodes", el.childNodes[9].innerHTML, el.childNodes[11].innerHTML);
+        // console.log("childNodes", el.childNodes[9].innerHTML, el.childNodes[11].innerHTML);
 
         Velocity(el,
           {left: "-60%"},
           {
-            duration: parseInt(el.childNodes[7].innerHTML) * 1000
-          },
-          {
+            duration: parseInt(el.childNodes[7].innerHTML) * 1000,
             // color: el.childNodes[9].innerHTML,
             // fontSize: el.childNodes[11].innerHTML + "em",
             complete: function () {
+              // console.log("enter", el.parentNode);
               done();
-            }
+            },
           }
         );
       },
       afterEnter:function (el,done) {
-        
+        // console.log("afterEnter", el.parentNode);
+        el.parentNode.removeChild(el);
+        // done();
       }
 
     },
     watch: {
       datalist: {
         handler(newData, oldData) {
-          // console.log(oldData, newData);
+          // console.log("newData", newData);
+          this.barrageData_2 = this.barrageData_2.concat(newData);
         },
         immediate: true
       },
-      bind_data: function (newData, oldData) {
-        console.log("newData", newData, "oldData", oldData);
+      actionUrl:{
+        handler(newData, oldData) {
+          this._actionUrl = newData;
+        }
       }
     },
 
@@ -520,7 +520,7 @@
             }
             _that.sliderFill.style.width = that.style.left;
             _that.textPreview.style.fontSize = _that.rangeValue + "px";
-            console.log("rangeValue: ", _that.rangeValue);
+            // console.log("rangeValue: ", _that.rangeValue);
           };
 
 
@@ -535,8 +535,6 @@
           let oldX = event.clientX;
           let left = parseInt(that.style.left);
 
-
-          // console.log("mousedown  ", sliderHandle);
           document.ontouchmove = function (ev) {
             let x = ev.clientX - oldX;
 
@@ -568,15 +566,11 @@
         };
       }//end of sliderHandle
 
-      for (let i = 0; i < _that.barrageData_2.length; i++) {
-        // barrageData_2[i]["road"] = Math.floor(Math.random() * barrageRoad.length);
-        _that.barrageData_2[i]["road"] = i % _that.barrageRoad.length;
-      }
-      // console.log("screen-size", screen.width, screen.height);
+
       let timer = setInterval(function (args) {
         if (_that.barrageData_2.length <= 0) {
           // console.log("barrageData:", _that.barrageData_2);
-          _that.regularGetBarrage();
+          // _that.regularGetBarrage();
           return;
         }
         // _that.sendBarrage(_that.barrageData_2[0]["barrageId"],
@@ -602,7 +596,7 @@
           default:
             _that.barrageRoad5.push(_that.barrageData_2[0]);_that.barrageData_2.splice(0, 1);break;
         }
-        console.log("data-num", _that.barrageData_2.length);
+        // console.log("data-num", _that.barrageData_2.length);
         // _that.barrageRoad0.push(_that.barrageData_2[0]);
         // _that.barrageData_2.splice(0, 1);
       }, 2000);
@@ -809,6 +803,18 @@
 
   .barrage_active {
     left: -60% !important;
+  }
+
+  .barrage:hover {
+    background-image: -webkit-linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
+    background-image: -moz-linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
+    background-image: linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
+  }
+
+  .barrage-clicked {
+    background-image: -webkit-linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
+    background-image: -moz-linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
+    background-image: linear-gradient(-90deg, #92fb2f, rgba(146, 251, 47, 0.22));
   }
 
   /*.barrage-enter-active{*/
