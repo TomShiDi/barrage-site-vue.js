@@ -29,7 +29,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## data-form to datalist
 
 
-```
+```json
 {"barrageId":26,
 	"barrageSenderId":1,
 	"content":"etetwerwerwr",
@@ -38,7 +38,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	"color":"green",
 	"textSize":20,
 	"road":0,
-	}
+}
 ```
 
 ### You need to install JQuery
