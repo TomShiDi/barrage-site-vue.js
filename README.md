@@ -29,14 +29,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ```json
-{"barrageId":26,
+{
+  "barrageId":26,
 	"barrageSenderId":1,
 	"content":"etetwerwerwr",
 	"starNum":24,
 	"speed":12,
 	"color":"green",
 	"textSize":20,
-	"road":0,
+	"road":0
 }
 ```
 
